@@ -2,6 +2,8 @@
 
 All contributions are most welcome.
 
+Please be mindful of the [Code of Conduct](CODE_OF_CONDUCT.md) while contributing and conversing on this repo!
+
 ## Local setup
 
 - Fork this repository (repo) (top right corner on this page in desktop view).
