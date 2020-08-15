@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<main>
+		<h1>1 or 2?</h1>
+		<h2>Hand gesture recognition</h2>
+
+		<form action="/predict" method="POST" enctype="multipart/form-data">
+			<label for="image-upload">Upload an image of a hand gesture showing 1 or 2</label>
+			<br>
+			<input type="file" id="file" name="file">
+			<br>
+			  
+			<button type="submit">Predict</button>
+		</form>
+
+		<div>NOTE: The prediction will take around 20 seconds, so please be patient after clicking the 'Predict' button.</div>
+	</main>
+{% endblock %}

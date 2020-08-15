@@ -1,0 +1,52 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+}
+
+form, .output
+{
+	padding: 20% 0%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+button
+{
+	padding: 2% 12%;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+footer
+{
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a
+{
+	color: #fff;
+}
