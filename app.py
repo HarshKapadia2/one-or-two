@@ -51,9 +51,19 @@ def predict():
 def output():
 	if request.method == 'GET':
 		output = request.args.get('output')
+		output_list = output.split(' ')
+
+		# weird model output issue handled
+		if output_list[1] == '':
+			output_list.pop(1)
+
+		output_1 = output_list[0][2:]
+		output_2 = output_list[1][:-2]
+
+		# clearing previous session to remove any residual flash messages
 		session.clear()
 
-		return render_template('output.html', output = output)
+		return render_template('output.html', output_1 = output_1, output_2 = output_2)
 
 
 if __name__ == '__main__':

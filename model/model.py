@@ -37,6 +37,5 @@ def prediction(pic_path):
 
 	# run the inference
 	prediction = model.predict(data)
-	print(prediction)
 	
 	return prediction
