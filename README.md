@@ -1,5 +1,7 @@
 # one-or-two
 
+<img src="./static/img/favicon.ico" width=10%>
+
 A hand gesture model from [Teachable Machine](https://teachablemachine.withgoogle.com/) to detect 1 and 2 in a picture.
 
 Hosted at https://one-or-two.herokuapp.com/.
