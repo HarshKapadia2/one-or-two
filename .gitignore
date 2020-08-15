@@ -1,8 +1,8 @@
 .pytest_cache
 .vscode
 env
-samples/1-samples/1-samples.zip
-samples/2-samples/2-samples.zip
+samples/1-samples
+samples/2-samples
 model/converted_keras.zip
 model/labels.txt
 model/__pycache__
