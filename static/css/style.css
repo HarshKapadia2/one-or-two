@@ -23,13 +23,19 @@ main
 	height: 90vh;
 }
 
+.flash-msg
+{
+	padding: 5% 0;
+}
+
 form, .output
 {
-	padding: 20% 0%;
+	padding: 10% 0%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 button
 {
 	padding: 2% 12%;
