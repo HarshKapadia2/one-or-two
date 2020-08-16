@@ -4,11 +4,15 @@ All contributions are most welcome.
 
 Please be mindful of the [Code of Conduct](CODE_OF_CONDUCT.md) while contributing and conversing on this repo!
 
+You can improve anything you feel like or [solve issues](https://github.com/HarshKapadia2/one-or-two/issues) if possible.
+
 ## Local setup
+
+> The following commands are for Windows. Please modify them for other Operating Systems.
 
 - Fork this repository (repo) (top right corner on this page in desktop view).
 - [Clone](https://harshkapadia2.github.io/git_basics/#_git_clone) your forked repo.
-- Install [Python 3.8.x](https://www.python.org/downloads/) **64-bit**.
+- Install the **64-bit** version of [Python 3.8.x](https://www.python.org/downloads/).
 - Create a [virtual environment](https://docs.python.org/3/library/venv.html#module-venv) (venv) and activate it.
 - After activating the venv, run `pip install -r requirements.txt` in the root directory of the project to install all the dependencies.
 - Create a `.env` file in the root directory and add `SECRET_KEY='<random_string>'` to it.
