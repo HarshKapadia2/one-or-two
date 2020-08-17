@@ -8,14 +8,13 @@ You can improve anything you feel like or [solve issues](https://github.com/Hars
 
 ## Local setup
 
-> The following commands are for Windows. Please modify them for other Operating Systems.
-
 - Fork this repository (repo) (top right corner on this page in desktop view).
 - [Clone](https://harshkapadia2.github.io/git_basics/#_git_clone) your forked repo.
 - Install the **64-bit** version of [Python 3.8.x](https://www.python.org/downloads/).
 - Create a [virtual environment](https://docs.python.org/3/library/venv.html#module-venv) (venv) and activate it.
 - After activating the venv, run `pip install -r requirements.txt` in the root directory of the project to install all the dependencies.
-- Create a `.env` file in the root directory and add `SECRET_KEY='<random_string>'` to it.
+- Copy `sample.env` to `.env` (Windows: `copy sample.env .env` | Unix: `cp sample.env .env`)
+- Note: change the value of `SECRET_KEY` to a different, random string if you are going to deploy it yourself.
    - Please do not push the `.env` file to GitHub.
    - For hosting, the `SECRET_KEY` needs to be added to the `config vars` (environment variables) of the hosting service.
 - Activate the venv and run `python app.py` to start the web app on `localhost:5000` by default.
