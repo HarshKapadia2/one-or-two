@@ -14,14 +14,13 @@
 				{% endif %}
 			{% endwith %}
 		</div>
-		
 
 		<form action="/predict" method="POST" enctype="multipart/form-data">
-			<label for="image-upload">Upload an image of a hand gesture showing 1 or 2</label>
+			<label for="image-upload">Upload an image of a hand showing &#9757; or &#9996;</label>
 			<br>
-			<input type="file" id="file" name="file">
+			<input type="file" id="image-upload" name="file" required accept=".png,.jpg,.jpeg">
 			<br>
-			  
+
 			<button type="submit">Predict</button>
 		</form>
 
