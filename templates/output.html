@@ -6,9 +6,14 @@
 		<h2>Hand gesture recognition</h2>
 		
 		<div class="output">
-			<h3>OUTPUT</h3>
-			<div class="probab-1">1: {{ output_1 }}</div>
-			<div class="probab-2">2: {{ output_2 }}</div>
+			<div class="output-card {{ output_1['display_class'] }}">
+				<span class = "icon">&#9757;</span>
+				<div class = "percentage">{{ output_1['percentage'] }}</div>
+			</div>
+			<div class="output-card {{ output_2['display_class'] }}">
+				<span class = "icon">&#9996;</span>
+				<div class = "percentage">{{ output_2['percentage'] }}</div>
+			</div>
 		</div>
 
 		<form action="/" method="GET">

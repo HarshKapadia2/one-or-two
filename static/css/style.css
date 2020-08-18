@@ -12,6 +12,7 @@ body
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: Sans-Serif;
 }
 
 main
@@ -42,6 +43,24 @@ button
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
+	background: transparent;
+	color: white;
+	font-size: 1rem;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 0.5em 1em;
+	outline: none;
+	transition: box-shadow linear 200ms;
+}
+
+button:hover
+{
+	box-shadow: 0 0 10px #fff8;
+}
+
+label
+{
+	font-size: 1.5rem;
 }
 
 footer
@@ -55,4 +74,44 @@ footer
 a
 {
 	color: #fff;
+}
+
+.output
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 2em;
+}
+
+.output-card
+{
+	display: grid;
+	place-content: center;
+	padding: 1em;
+	border: 0.25em solid #fff8;
+	border-radius: 1em;
+}
+
+.output-card > .icon
+{
+	text-align: center;
+	font-size: 5rem;
+}
+
+.output-card .percentage{
+	font-size: 2rem;
+	font-variant: tabular-nums;
+}
+
+.output-card .percentage::after{
+	content: "%";
+}
+
+.right{
+	background: linear-gradient(to top right, #00f260, #0575e6);
+}
+
+.wrong{
+	opacity: 0.5;
+	background: linear-gradient(to top right, #8a2387, #e94057, #f27121);
 }
