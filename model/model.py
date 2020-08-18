@@ -16,7 +16,6 @@ def prediction(pic_path):
 
 	# Replace this with the path to your image
 	image = Image.open(pic_path)
-	# image = picture
 
 	#resize the image to a 224x224 with the same strategy as in TM2:
 	#resizing the image to be at least 224x224 and then cropping from the center
@@ -27,7 +26,7 @@ def prediction(pic_path):
 	image_array = np.asarray(image)
 
 	# display the resized image
-	image.show()
+	# image.show()
 
 	# Normalize the image
 	normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
