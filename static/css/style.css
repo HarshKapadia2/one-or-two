@@ -22,6 +22,7 @@ main
 	align-items: center;
 	justify-content: center;
 	height: 90vh;
+	text-align: center;
 }
 
 .flash-msg
@@ -35,6 +36,7 @@ form, .output
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 
 button
@@ -63,18 +65,7 @@ label
 	font-size: 1.5rem;
 }
 
-footer
-{
-	height: 10vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
-a
-{
-	color: #fff;
-}
 
 .output
 {
@@ -114,4 +105,20 @@ a
 .wrong{
 	opacity: 0.5;
 	background: linear-gradient(to top right, #8a2387, #e94057, #f27121);
+}
+
+
+
+footer
+{
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+a
+{
+	color: #fff;
 }
