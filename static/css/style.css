@@ -198,3 +198,24 @@ a
 	place-self: center;
 	z-index: 2;
 }
+
+#CameraAction.captureImage
+{
+	width: 3rem;
+	height: 3rem;
+	align-self: end;
+	margin-bottom: 2rem;
+	border-radius: 50%;
+	border: 2px solid #0008;
+	transition: background linear 100ms;
+}
+#CameraAction.captureImage:hover
+{
+	box-shadow: none;
+	background: #fff4;
+}
+
+#CameraAction.captureImage #CameraActionText
+{
+	display: none;
+}
