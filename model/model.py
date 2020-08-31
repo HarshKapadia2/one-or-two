@@ -36,6 +36,6 @@ def prediction(pic_path):
 	data[0] = normalized_image_array
 
 	# run the inference
-	prediction = model.predict(data)
+	prediction_data = model.predict(data)
 	
-	return prediction
+	return prediction_data
