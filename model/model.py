@@ -15,7 +15,8 @@ def prediction(pic_path):
 	data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 	# Replace this with the path to your image
-	image = Image.open(pic_path)
+	# Reads and converts image into RGB format
+	image = Image.open(pic_path).convert('RGB')
 
 	#resize the image to a 224x224 with the same strategy as in TM2:
 	#resizing the image to be at least 224x224 and then cropping from the center
