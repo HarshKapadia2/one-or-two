@@ -8,7 +8,7 @@ Hosted at https://one-or-two.herokuapp.com/.
 
 > Sample inputs have been provided in the [`./samples`](samples) directory.
 
-## contributions
+## Contributions
 
 - All contributors are most welcome!
 - Please refer to [`CONTRIBUTING.md`](CONTRIBUTING.md) for local project setup and further instructions.
