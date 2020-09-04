@@ -30,6 +30,62 @@ main
 	padding: 5% 0;
 }
 
+
+
+#Camera
+{
+	display: grid;
+	place-content: center;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#Camera .captureSize
+{
+	width: 32rem;
+	height: 18rem;
+}
+
+#CameraContainer
+{
+	display: grid;
+}
+
+#CameraContainer *
+{
+	grid-area: 1/1 / 1/1;
+}
+
+#CameraAction
+{
+	height: max-content;
+	width: max-content;
+	place-self: center;
+	z-index: 2;
+}
+
+#CameraAction.captureImage
+{
+	width: 3rem;
+	height: 3rem;
+	align-self: end;
+	margin-bottom: 2rem;
+	border-radius: 50%;
+	border: 2px solid #0008;
+	transition: background linear 100ms;
+}
+#CameraAction.captureImage:hover
+{
+	box-shadow: none;
+	background: #fff4;
+}
+
+#CameraAction.captureImage #CameraActionText
+{
+	display: none;
+}
+
+
+
 form, .output
 {
 	padding: 10% 0%;
@@ -123,99 +179,9 @@ a
 	color: #fff;
 }
 
-.output
-{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 2em;
-}
 
-.output-card
-{
-	display: grid;
-	place-content: center;
-	padding: 1em;
-	border: 0.25em solid #fff8;
-	border-radius: 1em;
-}
-
-.output-card > .icon
-{
-	text-align: center;
-	font-size: 5rem;
-}
-
-.output-card .percentage{
-	font-size: 2rem;
-	font-variant: tabular-nums;
-}
-
-.output-card .percentage::after{
-	content: "%";
-}
-
-.right{
-	background: linear-gradient(to top right, #00f260, #0575e6);
-}
-
-.wrong{
-	opacity: 0.5;
-	background: linear-gradient(to top right, #8a2387, #e94057, #f27121);
-}
 
 .hide
-{
-	display: none;
-}
-
-#Camera
-{
-	display: grid;
-	place-content: center;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-#Camera .captureSize
-{
-	width: 32rem;
-	height: 18rem;
-}
-
-#CameraContainer
-{
-	display: grid;
-}
-
-#CameraContainer *
-{
-	grid-area: 1/1 / 1/1;
-}
-
-#CameraAction
-{
-	height: max-content;
-	width: max-content;
-	place-self: center;
-	z-index: 2;
-}
-
-#CameraAction.captureImage
-{
-	width: 3rem;
-	height: 3rem;
-	align-self: end;
-	margin-bottom: 2rem;
-	border-radius: 50%;
-	border: 2px solid #0008;
-	transition: background linear 100ms;
-}
-#CameraAction.captureImage:hover
-{
-	box-shadow: none;
-	background: #fff4;
-}
-
-#CameraAction.captureImage #CameraActionText
 {
 	display: none;
 }
