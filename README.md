@@ -8,6 +8,10 @@ Hosted at https://one-or-two.herokuapp.com/.
 
 > Sample inputs have been provided in the [`./samples`](samples) directory.
 
+## Aim
+
+The aim of making this web app was to learn how to connect a model with a web app. Even though that was sort of achieved, there are a lot of problems with the model and results. Working on the issues!
+
 ## Contributions
 
 - All contributors are most welcome!
