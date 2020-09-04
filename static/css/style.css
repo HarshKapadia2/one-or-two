@@ -21,13 +21,19 @@ main
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 90vh;
 	text-align: center;
 }
 
 .flash-msg
 {
 	padding: 5% 0;
+}
+
+
+
+h1
+{
+	padding: 2% 0;
 }
 
 
@@ -88,7 +94,7 @@ main
 
 form, .output
 {
-	padding: 10% 0%;
+	padding: 10% 0 7% 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -167,7 +173,7 @@ label
 
 footer
 {
-	height: 10vh;
+	padding: 5% 0 2% 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
