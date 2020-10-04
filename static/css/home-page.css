@@ -1,0 +1,32 @@
+h1 {
+	margin-bottom: 10px;
+} 
+
+.flash-msg {
+	padding: 5% 0;
+}
+
+form {
+	padding: 10% 0%;
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+form input {
+	margin-bottom: 55px;
+	align-self: flex-start;
+	font-size: 1.5em;
+}
+
+label {
+	display: block;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+div {
+	font-size: 1.2em;
+}

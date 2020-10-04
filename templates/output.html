@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/output.css') }}">
+{% endblock %}
+
 {% block body %}
 	<main>
 		<h1>1 or 2?</h1>
 		<h2>Hand gesture recognition</h2>
-		
+		 
 		<div class="output">
 			<div class="output-card {{ output_1['display_class'] }}">
 				<span class = "icon">&#9757;</span>

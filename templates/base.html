@@ -9,10 +9,10 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
 
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/github-corner.css') }}">
-
+		{% block head %}{% endblock %}
 
 		<title>1 or 2?</title>
 	</head>

@@ -1,0 +1,45 @@
+.output {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 2em;
+	user-select: none;
+}
+
+.output {
+	padding: 10% 0%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+
+.output-card {
+	display: grid;
+	place-content: center;
+	padding: 1em;
+	border: 0.25em solid #fff8;
+	border-radius: 1em;
+}
+
+.output-card > .icon {
+	text-align: center;
+	font-size: 5rem;
+}
+
+.output-card .percentage {
+	font-size: 2rem;
+	font-variant: tabular-nums;
+}
+
+.output-card .percentage::after {
+	content: "%";
+}
+
+.right {
+	background: linear-gradient(to top right, #00f260, #0575e6);
+}
+
+.wrong {
+	opacity: 0.5;
+	background: linear-gradient(to top right, #8a2387, #e94057, #f27121);
+}

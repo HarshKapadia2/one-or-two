@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home-page.css') }}">
+{% endblock %}
+
 {% block body %}
 	<main>
 		<h1>1 or 2?</h1>
@@ -14,12 +18,11 @@
 				{% endif %}
 			{% endwith %}
 		</div>
-
+ 
 		<form action="/predict" method="POST" enctype="multipart/form-data">
 			<label for="image-upload">Upload an image of a hand showing &#9757; or &#9996;</label>
-			<br>
+			
 			<input type="file" id="image-upload" name="file" required accept=".png,.jpg,.jpeg">
-			<br>
 
 			<button type="submit">Predict</button>
 		</form>
