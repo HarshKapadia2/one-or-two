@@ -43,13 +43,12 @@ a {
 }
 
 button {
-	padding: 2% 12%;
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
 	background: transparent;
 	color: white;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	border: 1px solid white;
 	border-radius: 8px;
 	padding: 0.5em 2em;
@@ -61,3 +60,19 @@ button:hover {
 	box-shadow: 0 0 10px #fff8;
 }
 
+
+@media screen and (max-width: 375px) {
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		max-width: 260px;
+		font-size: 1em;
+	}
+
+	button {
+		font-size:  1rem;
+		padding: 0.5em 1em;
+	}
+}

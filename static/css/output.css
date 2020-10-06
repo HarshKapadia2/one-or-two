@@ -43,3 +43,21 @@
 	opacity: 0.5;
 	background: linear-gradient(to top right, #8a2387, #e94057, #f27121);
 }
+
+@media screen and (max-width: 375px) {
+	.output {
+		flex-direction: column;
+	}
+
+	.output-card {
+		margin-bottom: 10px;
+	}
+
+	.output-card > .icon {
+		font-size: 3rem;
+	}
+
+	.output-card .percentage {
+		font-size: 1rem;
+	}
+}

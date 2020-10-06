@@ -16,17 +16,37 @@ form {
 }
 
 form input {
+	max-width: 310px;
 	margin-bottom: 55px;
-	align-self: flex-start;
+	align-self: center;
 	font-size: 1.5em;
 }
 
 label {
 	display: block;
 	font-size: 1.5rem;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 div {
 	font-size: 1.2em;
+}
+
+@media screen and (max-width: 375px) {
+	form input {
+		margin-bottom: 30px;
+		font-size: 1em;
+		align-self: center;
+		max-width: 208px;
+	}
+
+	label {
+		max-width: 260px;
+		font-size: 1rem;
+	}
+
+	div {
+		font-size: 0.9em;
+		max-width: 300px;
+	}
 }
