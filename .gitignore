@@ -6,4 +6,5 @@ samples/2-samples
 model/converted_keras.zip
 model/labels.txt
 model/__pycache__
+.vevn/
 .env

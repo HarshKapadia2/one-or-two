@@ -57,8 +57,8 @@ def output():
 		if output_list[1] == '':
 			output_list.pop(1)
 
-		output_1 = output_list[0][2:]
-		output_2 = output_list[1][:-2]
+		output_1 = float(output_list[0][2:] or 0)
+		output_2 = float(output_list[1][:-2] or 0)
 
 		# clearing previous session to remove any residual flash messages
 		session.clear()
@@ -66,11 +66,11 @@ def output():
 		return render_template(
 			'output.html',
 			output_1 = {
-				'percentage': '{:.4f}'.format(round(100 * float(output_1), 4)),
+				'percentage': '{:.4f}'.format(round(100 * output_1, 4)),
 				'display_class': 'right' if output_1 > output_2 else 'wrong'
 			},
 			output_2 = {
-				'percentage': '{:.4f}'.format(round(100 * float(output_2), 4)),
+				'percentage': '{:.4f}'.format(round(100 * output_2, 4)),
 				'display_class': 'right' if output_2 > output_1 else 'wrong'
 			}
 		)
