@@ -32,6 +32,12 @@ div {
 	font-size: 1.2em;
 }
 
+.disabled {
+	pointer-events: none;
+	opacity: 0.6;
+}
+
+
 @media screen and (max-width: 375px) {
 	form input {
 		margin-bottom: 30px;
