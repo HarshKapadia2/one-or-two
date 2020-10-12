@@ -10,6 +10,11 @@ app = Flask(__name__)
 load_dotenv()
 app.secret_key = os.getenv('SECRET_KEY')
 
+@app.errorhandler(404)
+def page_not_found(e):
+    # note that we set the 404 status explicitly
+    return render_template('error-404.html'), 404
+
 @app.route('/', methods=['GET'])
 def homePage():
 	if request.method == 'GET':
