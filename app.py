@@ -11,9 +11,26 @@ load_dotenv()
 app.secret_key = os.getenv('SECRET_KEY')
 
 @app.errorhandler(404)
+
+@app.errorhandler(Exception)
 def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return render_template('error-404.html'), 404
+	context = {}
+	_default_err = 'External error'
+	# note that we set the 404 status explicitly
+	response_func = getattr(e, 'get_response', None)
+	response = response_func() if response_func else None
+	context['code'] = getattr(response, '_status_code', 500)
+	context['status'] = getattr(response, '_status', _default_err)
+
+	if context['code'] == 404:
+		_path = request.full_path
+		context['description'] = \
+			'Error: Requested URL "%s" was not found' % _path
+
+	# addiotional fix to replace status code
+	context['status'] = context['status'].replace(str(context['code']), '')
+
+	return render_template('error.html', **context), context['code']
 
 @app.route('/', methods=['GET'])
 def homePage():
